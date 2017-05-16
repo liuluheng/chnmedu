@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if ie 6]>
+<html class="ie6 lt-ie8 lt-ie9" lang="zh-CN">
+<![endif]-->
+<!--[if ie 7]>
+<html class="ie7 lt-ie8 lt-ie9" lang="zh-CN">
+<![endif]-->
+<!--[if ie 8]>
+<html class="ie8 lt-ie9" lang="zh-CN">
+<![endif]-->
+<!--[if ie 9]>
+<html class="ie9" lang="zh-CN">
+<![endif]-->
+<!--[if !ie]><!-->
+<html lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link href="{dede:global.cfg_cmsurl/}/favicon.png" rel="shortcut icon">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<!--[if !ie]><!-->
+<script>
+if (window.matchMedia("screen and (-ms-high-contrast: active), (-ms-high-contrast: none)").matches) {
+  document.documentElement.className = "ie" + document.documentMode + " gt-ie9";
+}
+</script>
+<!--<![endif]-->
+<!-- css global begin -->
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_indexurl/}style/css/nsd.css">
+<!--[if lt ie 9]>
+<link rel="stylesheet" href="nsd-1.css" tppabs="http://img.bimba.edu.cn/res/nsd/compatible/css/nsd.css" />
+<![endif]-->
+<script type="text/javascript" src="{dede:global.cfg_indexurl/}style/js/jquery.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_indexurl/}style/js/jquery-extended.js"></script>
+<!-- css global end -->
+</head>
+<body>
+<div class="wrapper">
+<!--头部开始-->
+    {dede:include filename="head.htm"/}
+<!--头部结束-->
+	
+    <div class="breadcrumb">
+        <div class="container">
+            <ul class="list">
+            <li>{dede:field name='position'/}</li>
+            </ul>
+        </div>
+    </div>
+
+	<div class="container container-4">
+		<div class="sidenav">
+			<div class="sidenav-header">
+                    <h2 class="page-header">{dede:field.title /}</h2>
+                    <span class="bg"><span class="sr-only">sidenav header background</span></span>
+			</div>
+            <!--频道封面不起作用-->
+			<ul class="nav">
+            
+                {dede:channel type='son' currentstyle="<li><a href='~typelink~' class='thisclass'>~typename~</a></li>"}
+                	<li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+                {/dede:channel}
+
+			</ul>
+			<span class="sidenav-bg"><span class="sr-only">sidenav background</span></span>
+		</div>
+		<div class="maincontent">
+			<div class="article">
+                {dede:field.content/}
+			</div>
+		</div>
+	</div>
+
+<!--底部开始-->
+	{dede:include filename="footer.htm"/}
+<!--底部结束-->
+</div>
+</body>
+
+</html>

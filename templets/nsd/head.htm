@@ -1,0 +1,51 @@
+	<div class="navbar"> 
+		<div class="container"> 
+            <a class="navbar-brand" href="{dede:global.cfg_indexurl/}" title="中国现代基础教育研究院"><img src="{dede:global.cfg_indexurl/}style/img/logo.png" alt="中国现代基础教育研究院" /></a> 
+            
+            <ul class="nav" id="nav1"> 
+                <li class="dropdown 1066" id="1066"> <h5 class="title"><a href="{dede:global.cfg_indexurl/}">首页</a></h5> 
+                </li>
+                
+                {dede:channel row="5" type="top" col="1" }
+                <li class="dropdown"><h5 class="title"><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></h5></li>
+                {/dede:channel}
+               
+           </ul> 
+		</div> 
+    </div>
+    
+    <script type="text/javascript">
+//导航菜单	 
+$(function(){
+	$("#nav1 > li").hover(function () {
+		$(this).addClass("open")
+	  },
+	  function () {
+		$(this).removeClass("open")
+	  }
+	);
+	$("#topbar-toggle").bind("click",function(){
+		if($("body").hasClass("main-nav-open")){
+			$("body").removeClass("main-nav-open");
+		} else{
+			$("body").addClass("main-nav-open");
+		}
+    });
+
+	$(".caret").bind("click",function(){
+		if($(this).parent().parent(".dropdown").hasClass("open")){
+			$(this).parent().parent(".dropdown").removeClass("open");
+		}else{
+			$(this).parent().parent(".dropdown").addClass("open");
+		}
+	});
+	
+	$("a[data-name='show-title']").each(function(){
+		var subtitle = $(this).html();
+		if(subtitle == ""){
+			$(this).parents('.caption').remove();
+		}
+	});
+    
+});
+</script>

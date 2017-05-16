@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<!--[if ie 6]>
+<html class="ie6 lt-ie8 lt-ie9" lang="zh-CN">
+<![endif]-->
+<!--[if ie 7]>
+<html class="ie7 lt-ie8 lt-ie9" lang="zh-CN">
+<![endif]-->
+<!--[if ie 8]>
+<html class="ie8 lt-ie9" lang="zh-CN">
+<![endif]-->
+<!--[if ie 9]>
+<html class="ie9" lang="zh-CN">
+<![endif]-->
+<!--[if !ie]><!-->
+<html lang="zh-CN">
+<!--<![endif]--><head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+<meta name="baidu-site-verification" content="7nlv2o4ch4" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<title>中国现代基础教育研究院</title>
+
+<link href="{dede:global.cfg_cmsurl/}/favicon.png" rel="shortcut icon">
+<!--[if !ie]><!-->
+<script>
+if (window.matchMedia("screen and (-ms-high-contrast: active), (-ms-high-contrast: none)").matches) {
+  document.documentElement.className = "ie" + document.documentMode + " gt-ie9";
+}
+</script>
+<!--<![endif]-->
+<!-- css global begin -->
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_indexurl/}style/css/nsd.css">
+<!--[if lt ie 9]>
+<![endif]-->
+<script type="text/javascript" src="{dede:global.cfg_indexurl/}style/js/jquery.js"></script>
+<!--[if !ie]><!-->
+<script type="text/javascript" src="{dede:global.cfg_indexurl/}style/js/hammer.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_indexurl/}style/js/jquery.hammer.js"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="{dede:global.cfg_indexurl/}style/js/carousel.js"></script>
+<!-- css global end -->
+<script type="text/javascript">
+$(function() {
+  $('#carousel').carousel({
+    interval: 3000
+  });
+});
+</script>
+<!--[if !ie]><!-->
+<script type="text/javascript">
+$(function() {
+  $("#carousel").hammer().on("swipeleft", function(){  
+	$(this).carousel("next");     
+  });  
+	  
+  $("#carousel").hammer().on("swiperight", function(){  
+	$(this).carousel("prev"); 
+  });
+   
+});
+</script>
+<!--<![endif]-->
+
+</head>
+<body> 
+<div class="wrapper">
+<!--头部开始-->
+ 
+    {dede:include filename="head.htm"/}
+    
+<!--头部结束--> 
+
+<!--焦点图--> 
+    <div class="banner"> 
+        <div class="carousel slide" id="carousel"> 
+            <div class="container"> 
+                <div class="carousel-inner" style="margin-left: -100%;">
+                 
+                    <div class="item"> 
+                        <div class="pic"><img src="{dede:global.cfg_indexurl/}style/img/b1.jpg" title="" /></div> 
+                        <div class="caption"><h4 class="title"></h4></div> 
+                    </div> 
+                    <div class="item active"> 
+                        <div class="pic"><img src="{dede:global.cfg_indexurl/}style/img/b2.jpg" title="" /></div> 
+                        <div class="caption"><h4 class="title"></h4></div> 
+                    </div>
+                    <div class="item">
+                        <div class="pic"><img src="{dede:global.cfg_indexurl/}style/img/b3.jpg" title="" /></div> 
+                    </div>
+                    <div class="item"> 
+                    <div class="pic"><img src="{dede:global.cfg_indexurl/}style/img/b4.jpg" title="" /></div> 
+                    </div>
+                    <div class="item"> 
+                        <div class="pic"><img src="{dede:global.cfg_indexurl/}style/img/b1.jpg" title="" /></div> 
+                    </div>
+                    <div class="item"> 
+                        <div class="pic"><img src="{dede:global.cfg_indexurl/}style/img/b2.jpg" title="" /></div> 
+                    </div>
+                    <div class="item"> 
+                        <div class="pic"><img src="{dede:global.cfg_indexurl/}style/img/b3.jpg" title="" /></div> 
+                    </div>
+                     
+                </div>
+                 
+                <ol class="carousel-indicators"> 
+                    <li class="active" title="2017校运动会国发院教职工风采" data-target="#carousel" data-slide-to="1"><span class="sr-only"></span></li> 
+                    <li title="《 人民日报 》特别报道&middot;南南合作与发展学院" data-target="#carousel" data-slide-to="2"><span class="sr-only"></span></li> 
+                    <li title="我与林毅夫老师" data-target="#carousel" data-slide-to="3"><span class="sr-only"></span></li> 
+                    <li title="国发院蝉联高校智库第一" data-target="#carousel" data-slide-to="4"><span class="sr-only"></span></li> 
+                </ol>
+                 
+                <a class="left carousel-control" href="#carousel" data-slide="prev"> <span class="btn"></span> <span class="sr-only">Previous</span> </a> 
+                <a class="right carousel-control" href="#carousel" data-slide="next"> <span class="btn"></span> <span class="sr-only">Next</span> </a> 
+            </div> 
+        </div> 
+    </div> 
+   <!--活动预告--> 
+    <div class="container container-1"> 
+        <div class="module module-1"> 
+            <div class="mod-header"> 
+                <h3 class="page-header">活动预告</h3>
+                <div class="more" style="width: 118px;margin-top:0px;">
+                    {dede:type typeid='14'}
+                    <a href="[field:typeurl/]" title="更多&gt;">更多&gt;&gt;</a>
+                    {/dede:type} 
+
+            	</div> 
+            </div> 
+            <div class="mod-body"> 
+                <ul class="captions captions-1">
+                {dede:arclist row="4" typeid="14" titlelen="72" orderby="pubdate" orderway="desc"}
+                	<li>
+                    	<div class="caption">
+                    		<h4 class="title"> 【[field:pubdate function="GetDateMK(@me)"/]】 <a href="[field:typeurl/]" title="[field:fulltitle/]" >[[field:typename/]]</a><a href="[field:arcurl /]">[field:title /]</a></h4>
+                         </div>
+                     </li>
+                            
+                {/dede:arclist} 
+                </ul> 
+            </div> 
+        </div> 
+    </div> 
+   <!--新闻/观点/学术--> 
+   <div class="container container-2"> 
+    <div class="row"> 
+     <div class="column col-xs-1-1 col-sm-2-1 col-md-3-1"> 
+      <div class="module"> 
+       <div class="mod-header"> 
+       {dede:type typeid='15'}
+        <h3 class="page-header">[field:typename/]</h3>
+       {/dede:type} 
+       </div> 
+       <div class="mod-body">
+       <!--新闻列表开始--> 
+        <ul class="captions captions-marker captions-nowrap">
+        {dede:arclist row="8" typeid="15" titlelen="46" orderby="pubdate" orderway="desc"}
+         <li>
+            <div class="caption">
+                <h4 class="title"><a href="[field:arcurl /]">[field:title /]</a></h4>
+             </div>
+         </li>
+                    
+        {/dede:arclist} 
+ 
+        </ul>
+        <!--新闻列表结束--> 
+        <div class="more-captions">
+        {dede:type typeid='15'}
+         <a href="[field:typeurl/]" title="更多&gt;">更多&gt;&gt;</a>
+        {/dede:type}
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="column col-xs-1-1 col-sm-2-1 col-md-3-1"> 
+      <div class="module"> 
+       <div class="mod-header"> 
+       {dede:type typeid='16'}
+        <h3 class="page-header">[field:typename/]</h3>
+       {/dede:type} 
+       </div> 
+       <div class="mod-body">
+       <!--观点列表开始--> 
+        <ul class="captions captions-marker captions-nowrap"> 
+        {dede:arclist row="8" typeid="16" titlelen="46" orderby="pubdate" orderway="desc"}
+         <li>
+            <div class="caption">
+                <h4 class="title"><a href="[field:arcurl /]">[field:title /]</a></h4>
+             </div>
+         </li>
+                    
+        {/dede:arclist}
+ 
+        </ul>
+        <!--观点列表结束--> 
+        <div class="more-captions">
+        {dede:type typeid='16'}
+         <a href="[field:typeurl/]" title="更多&gt;">更多&gt;&gt;</a>
+        {/dede:type}
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="column col-xs-1-1 col-sm-1-1 col-md-3-1"> 
+      <div class="module"> 
+       <div class="mod-header"> 
+       {dede:type typeid='17'}
+        <h3 class="page-header">[field:typename/]</h3>
+       {/dede:type} 
+       </div> 
+       <div class="mod-body">
+       <!--学术列表开始--> 
+        <ul class="captions captions-marker captions-nowrap captions-2"> 
+        {dede:arclist row="8" typeid="17" titlelen="46" orderby="pubdate" orderway="desc"}
+         <li>
+            <div class="caption">
+                <h4 class="title"><a href="[field:arcurl /]">[field:title /]</a></h4>
+             </div>
+         </li>
+                    
+        {/dede:arclist} 
+ 
+        </ul>
+       <!--学术列表结束--> 
+        <div class="more-captions">
+        {dede:type typeid='17'}
+         <a href="[field:typeurl/]" title="更多&gt;">更多&gt;&gt;</a>
+        {/dede:type}
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   
+   <!--推荐内容（可展开收起）--> 
+   <div class="links links-chevron-up" id="rec_content"> 
+    <div class="container"> 
+     <div class="right"> 
+      <div class="row"> 
+       <div class="column col-xs-2-1 col-sm-4-1 col-md-4-1"> 
+        <div class="item"> 
+         <div class="pic"> 
+          <div class="thumb"> 
+           <div class="thumb-outer"> 
+            <div class="thumb-inner"> 
+             <a href="http://www.21cedu.org/" title="21世纪教育研究院" target="_blank"><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3119439057,4216864917&fm=96
+" alt="21世纪教育研究院" /></a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="caption"> 
+          <h4 class="title"><a href="http://www.21cedu.org/" title="21世纪教育研究院">21世纪教育研究院</a></h4> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="column col-xs-2-1 col-sm-4-1 col-md-4-1"> 
+        <div class="item"> 
+         <div class="pic"> 
+          <div class="thumb"> 
+           <div class="thumb-outer"> 
+            <div class="thumb-inner"> 
+             <a href="http://ihe.xmu.edu.cn/" title="厦门大学教育研究院" target="_blank"><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2992676772,4008905817&fm=96
+" alt="厦门大学教育研究院" /></a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="caption"> 
+          <h4 class="title"><a href="http://ihe.xmu.edu.cn/" title="厦门大学教育研究院">厦门大学教育研究院</a></h4> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="column col-xs-2-1 col-sm-4-1 col-md-4-1"> 
+        <div class="item"> 
+         <div class="pic"> 
+          <div class="thumb"> 
+           <div class="thumb-outer"> 
+            <div class="thumb-inner"> 
+             <a href="http://edu.nju.edu.cn/" title="南京大学教育研究院" target="_blank"><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3052136172,4121792088&fm=96
+" alt="南京大学教育研究院" /></a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="caption"> 
+          <h4 class="title"><a href="http://edu.nju.edu.cn/" title="南京大学教育研究院">南京大学教育研究院</a></h4> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="column col-xs-2-1 col-sm-4-1 col-md-4-1"> 
+        <div class="item"> 
+         <div class="pic"> 
+          <div class="thumb"> 
+           <div class="thumb-outer"> 
+            <div class="thumb-inner"> 
+             <a href="http://www.ioe.tsinghua.edu.cn/" title="清华大学教育研究院" target="_blank"><img src="http://www.tsinghua.edu.cn/publish/ioe/images/ioe_index_logo.jpg
+" alt="清华大学教育研究院" /></a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="caption"> 
+          <h4 class="title"><a href="http://www.ioe.tsinghua.edu.cn/" title="清华大学教育研究院">清华大学教育研究院</a></h4> 
+         </div> 
+        </div> 
+       </div>
+
+       <div class="column col-xs-2-1 col-sm-4-1 col-md-4-1"> 
+        <div class="item"> 
+         <div class="pic"> 
+          <div class="thumb"> 
+           <div class="thumb-outer"> 
+            <div class="thumb-inner"> 
+             <a href="http://www.casted.org.cn/" title="中国科学技术发展战略研究院" target="_blank"><img src="http://www.casted.org.cn/img/top-logo.png
+" alt="中国科学技术发展战略研究院" /></a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="caption"> 
+          <h4 class="title"><a href="http://www.casted.org.cn/" title="中国科学技术发展战略研究院">中国科学技术发展战略研究院</a></h4> 
+         </div> 
+        </div> 
+       </div> 
+
+       <div class="column col-xs-2-1 col-sm-4-1 col-md-4-1"> 
+        <div class="item"> 
+         <div class="pic"> 
+          <div class="thumb"> 
+           <div class="thumb-outer"> 
+            <div class="thumb-inner"> 
+             <a href="http://www.craes.cn/cn/index.html" title="中国环境科学研究院" target="_blank"><img src="http://www.craes.cn/r/cms/www/default/newImages/header_logo.png
+" alt="中国环境科学研究院" /></a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="caption"> 
+          <h4 class="title"><a href="http://www.craes.cn/cn/index.html" title="中国环境科学研究院">中国环境科学研究院</a></h4> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="column col-xs-2-1 col-sm-4-1 col-md-4-1"> 
+        <div class="item"> 
+         <div class="pic"> 
+          <div class="thumb"> 
+           <div class="thumb-outer"> 
+            <div class="thumb-inner"> 
+             <a href="http://cchd.nsd.edu.cn/" title="中国健康发展研究中心" target="_blank"><img src="http://img.bimba.edu.cn/resources/picture/1/2015/09/08/2015090894843307.png
+" alt="中国健康发展研究中心" /></a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="caption"> 
+          <h4 class="title"><a href="http://cchd.nsd.edu.cn/" title="中国健康发展研究中心">中国健康发展研究中心</a></h4> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="column col-xs-2-1 col-sm-4-1 col-md-4-1"> 
+        <div class="item"> 
+         <div class="pic"> 
+          <div class="thumb"> 
+           <div class="thumb-outer"> 
+            <div class="thumb-inner"> 
+             <a href="http://www.wzjky.net/" title="温州市教育教学研究院" target="_blank"><img src="http://www.wzjky.net/App_Themes/wzjky/image/logo.jpg
+" alt="温州市教育教学研究院" /></a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="caption"> 
+          <h4 class="title"><a href="http://www.wzjky.net/" title="温州市教育教学研究院">温州市教育教学研究院</a></h4> 
+         </div> 
+        </div> 
+       </div> 
+
+
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+<!--底部开始-->
+	{dede:include filename="footer.htm"/}
+<!--底部结束-->
+  </div>
+   
+</body>
+
+</html>
